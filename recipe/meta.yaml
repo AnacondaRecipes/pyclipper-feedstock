@@ -21,6 +21,8 @@ requirements:
   host:
     - python
     - pip
+    - wheel
+    - setuptools
     - cython >=0.28
     - setuptools_scm >=1.11.1
   run:
@@ -47,6 +49,7 @@ about:
     "Pyclipper is a Cython wrapper exposing public functions and classes of the C++ 
      translation of the Angus Johnson’s Clipper library (ver. 6.4.2)."
   dev_url: https://github.com/fonttools/pyclipper
+  doc_url: https://github.com/fonttools/pyclipper#readme
 
 extra:
   recipe-maintainers:
