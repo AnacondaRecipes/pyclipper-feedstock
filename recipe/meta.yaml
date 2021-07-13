@@ -1,5 +1,5 @@
 {% set name = "pyclipper" %}
-{% set version = "1.2.1" %}
+{% set version = "1.3.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyclipper-{{ version }}.zip
-  sha256: ca3751e93559f0438969c46f17459d07f983281dac170c3479de56492e152855
+  sha256: 48a1b5c585aea10e5b9c0b82d6abe2642fafd9ef158b9921852bc4af815ca20c
 
 build:
   number: 0
@@ -21,6 +21,8 @@ requirements:
   host:
     - python
     - pip
+    - wheel
+    - setuptools
     - cython >=0.28
     - setuptools_scm >=1.11.1
   run:
@@ -47,6 +49,7 @@ about:
     "Pyclipper is a Cython wrapper exposing public functions and classes of the C++ 
      translation of the Angus Johnson’s Clipper library (ver. 6.4.2)."
   dev_url: https://github.com/fonttools/pyclipper
+  doc_url: https://github.com/fonttools/pyclipper#readme
 
 extra:
   recipe-maintainers:
