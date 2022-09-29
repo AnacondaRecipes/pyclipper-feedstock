@@ -39,7 +39,8 @@ test:
 
 about:
   home: https://github.com/fonttools/pyclipper
-  license: MIT
+  # See Boost Sowtfare License https://github.com/fonttools/pyclipper/tree/main#license
+  license: MIT and BSL-1.0
   license_family: MIT
   license_file: 
     - LICENSE
