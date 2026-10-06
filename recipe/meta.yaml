@@ -13,6 +13,7 @@ source:
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  skip: true  # [py<310]
 
 requirements:
   build:
@@ -24,7 +25,7 @@ requirements:
     - cython >=0.28
     - pip
     - setuptools
-    - setuptools_scm >=1.11.1
+    - setuptools_scm
     - wheel
   run:
     - python
